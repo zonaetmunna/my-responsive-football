@@ -1,71 +1,90 @@
+
+/* -----------
+-----body style----
+----------------- */
+
 body{
      font-family: 'Poppins', sans-serif;
      margin: 0;
-
      background-color:  #FFFFFF;
 }
 
-/* heading  */
+/*-------------------
+ ------heading-----------
+ -------------------  */
 
-.heading-container{
+.container{
      /* width: 1440px;  */
-     height: 677px;
+     /* height: 677px; */
      background-color:  #2D25A0;
-
-    margin-bottom: 70px;
+     margin-bottom: 70px;
     
 }
 
-
-
-.heading-flex{
+.container-flex{
      display: flex;
-     justify-content: center;
+     justify-content: space-between; 
      align-items: center;
-     padding-left: 156px;
-     padding-right: 140px;
-     padding-top: 153px;
-     
+   
+    padding: 50px;
      
 }
-/* .heading-title{
-     width: 485px;
-height: 230px;
-left: 156px;
-top: 207px;
+.heading-title{
+     margin-right: 30px;
 }
-
-.heading-banner{
-     width: 556.01px;
-     height: 438px;
-} */
-
-
-
-
 
 
 h1{
      font-size: 64px;
      color: #FFFFFF;
 }
+
+.button-link{
+
+     width: 168px;
+     height: 44px;
+     background-color: #E02C6D;
+     
+}
+
 .heading-title  a{
+     font-weight: 500;
+     font-size: 16px;
      text-decoration: none;
+     color: #FFFFFF;
 
 }
+
 .fa-long-arrow-alt-right{
  margin-left: 10px;
 }
+
+.button-link:hover{
+     width: 400px;
+     transition: width 1s ease ;
+}
+
 
 .heading-banner img{
      width: 556.01px;
      height: 438px;
 }
+.heading-banner img:hover{
+     transform: rotate(30deg);
+
+}
 
 /* main section  */
 /*------------ player section style --------*/
 
-.player-container{
+main{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.main-container{
     width: 1050px;
     margin-bottom: 170px;
     
@@ -78,9 +97,11 @@ h1{
      grid-template-columns: repeat(3,1fr);
      grid-row-gap: 27px;
      grid-column-gap: 30px;
-     align-items: center;
+
      justify-content: center;
 
+     align-items: center;
+     
 
 }  
 
@@ -98,7 +119,7 @@ h1{
 
 .player-image img,.player-details{
      width: 100%;
-     height: 50%;
+     /* height: 50%; */
 }
 
 .player-image img{
@@ -116,9 +137,35 @@ h1{
      color: #6C6C6C;
 }
 
+/* ---------
+clubs style 
+-----------*/
+
+.clubs{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.club{
+     margin-left: 20px;
+     padding: 15px;
+     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+     
+}
+.club-thumbnail,.club-details{
+
+width: 100%;
+}
 
 
-/* ------------------------Footer style ------------------*/
+.club-thumbnail img{
+     width: 300px;
+     height: 256px;
+}
+
+
+/* --------------------
+----Footer style ------------------*/
 
 .football-icon{
      text-align: center;
@@ -136,6 +183,30 @@ h1{
    
 }
 
+/* ---------------
+media queries -
+--------------------*/
 
 
+/* ------------
+  --mobile device--
+  --------------- */
 
+  @media only screen and (max-width: 668px) {
+
+     .container{
+          width: 100%;
+     }
+
+.container-flex{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.players{
+     grid-template-columns: repeat(1,1fr);
+}
+
+
+ }
