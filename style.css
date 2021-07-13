@@ -29,8 +29,8 @@ body{
     padding: 50px;
      
 }
-.heading-title{
-     margin-right: 30px;
+.heading-title,.heading-banner{
+     margin-left: 30px;
 }
 
 
@@ -109,8 +109,9 @@ main{
      display: flex;
      flex-direction: column;
 
-     justify-content: center;
+     /* justify-content: center; */
      align-items: center;
+
 
      padding: 15px;
      
@@ -172,8 +173,13 @@ width: 100%;
      margin-bottom: 70px;
 }
 
+
+
 .football-icon img{
      width: 265px;
+}
+.social-icon i{
+     margin-left: 5px;
 }
 
 
