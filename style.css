@@ -14,8 +14,8 @@ body{
  -------------------  */
 
 .container{
-     /* width: 1440px;  */
-     /* height: 677px; */
+     width: 1440px;
+     height: 677px;
      background-color:  #2D25A0;
      margin-bottom: 70px;
     
@@ -23,14 +23,21 @@ body{
 
 .container-flex{
      display: flex;
-     justify-content: space-between; 
+     justify-content: center; 
      align-items: center;
-   
-    padding: 50px;
+   padding-top: 100px;
+    
      
 }
 .heading-title,.heading-banner{
-     margin-left: 30px;
+     width: 100%;
+    
+     
+}
+
+.heading-title{
+     margin: 20px;
+     padding-left: 50px;
 }
 
 
@@ -40,7 +47,6 @@ h1{
 }
 
 .button-link{
-
      width: 168px;
      height: 44px;
      background-color: #E02C6D;
@@ -64,11 +70,11 @@ h1{
      transition: width 1s ease ;
 }
 
-
 .heading-banner img{
-     width: 556.01px;
-     height: 438px;
+     width: 500px;
+     height: 400px;
 }
+
 .heading-banner img:hover{
      transform: rotate(30deg);
 
@@ -80,14 +86,13 @@ h1{
 main{
      display: flex;
      flex-direction: column;
-     justify-content: center;
+      justify-content: center;
      align-items: center;
 }
 
 .main-container{
     width: 1050px;
     margin-bottom: 170px;
-    
     
 
 }
@@ -98,9 +103,13 @@ main{
      grid-row-gap: 27px;
      grid-column-gap: 30px;
 
-     justify-content: center;
+     /* justify-content: center;
 
-     align-items: center;
+     align-items: center; */
+     padding: 20px;
+     
+
+     
      
 
 }  
@@ -109,7 +118,7 @@ main{
      display: flex;
      flex-direction: column;
 
-     /* justify-content: center; */
+     justify-content: center; 
      align-items: center;
 
 
@@ -120,7 +129,7 @@ main{
 
 .player-image img,.player-details{
      width: 100%;
-     /* height: 50%; */
+     height: 50%; 
 }
 
 .player-image img{
@@ -200,19 +209,50 @@ media queries -
 
   @media only screen and (max-width: 668px) {
 
-     .container{
+      .container{
           width: 100%;
+          height: auto;
+     
      }
 
-.container-flex{
+     .container-flex{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.heading-title,.heading-banner{
+     width: 100%;
+    
+     
+}
+
+
+
+
+     main{
+       
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+}
+
+    .main-container{
+       width: 100%;
+}
+
+.players,.clubs{
+    
+     grid-template-columns: repeat(1,1fr);
+     grid-row-gap: 24px;
+    
+}
+.player,.clubs{
      flex-direction: column;
      justify-content: center;
      align-items: center;
 }
 
-.players{
-     grid-template-columns: repeat(1,1fr);
-}
+
 
 
  }
