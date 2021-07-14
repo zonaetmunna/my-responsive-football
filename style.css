@@ -107,10 +107,7 @@ main{
 
      align-items: center; */
      padding: 20px;
-     
-
-     
-     
+      
 
 }  
 
@@ -131,7 +128,9 @@ main{
      width: 100%;
      height: 50%; 
 }
-
+.player-image img{
+     width: 100%;
+}
 .player-image img{
      width: 300px;
      height: 256px;
@@ -220,33 +219,39 @@ media queries -
      justify-content: center;
      align-items: center;
 }
-.heading-title,.heading-banner{
-     width: 100%;
+
     
      
-}
-
-
-
-
      main{
        
        flex-direction: column;
        justify-content: center;
        align-items: center;
+
 }
 
     .main-container{
        width: 100%;
+       height: auto;
 }
 
-.players,.clubs{
+.players{
     
      grid-template-columns: repeat(1,1fr);
      grid-row-gap: 24px;
+     justify-content: center;
+align-items: center;
     
 }
-.player,.clubs{
+
+.clubs{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+
+.player,.club{
      flex-direction: column;
      justify-content: center;
      align-items: center;
