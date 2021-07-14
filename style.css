@@ -208,7 +208,7 @@ media queries -
 
   @media only screen and (max-width: 668px) {
 
-      .container{
+     .container{
           width: 100%;
           height: auto;
      
@@ -260,4 +260,61 @@ align-items: center;
 
 
 
+ }
+
+
+ 
+
+ /* tablet device */
+
+ @media only screen and (min-width:688px) and (max-width:992px) {
+
+     .container{
+          width: 100%;
+          height: auto;
+     
+     }
+
+     .container-flex{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }
+
+     main{
+       
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+   
+   }
+
+   .main-container{
+     width: 100%;
+     height: auto;
+}
+
+.players{
+    
+     grid-template-columns: repeat(2,1fr);
+     grid-row-gap: 24px;
+     grid-column-gap: 20px;
+     justify-content: center;
+     align-items: center;
+    
+}
+
+.clubs{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.player,.club{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+      
  }
